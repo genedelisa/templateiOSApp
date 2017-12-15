@@ -1,7 +1,7 @@
 # .slather.yml
 
-xcodeproj: templateiOSApp/templateiOSApp.xcodeproj
-workspace: templateiOSApp.xcworkspace
+xcodeproj: templateiOSApp.xcodeproj
+# workspace: templateiOSApp.xcworkspace
 scheme: templateiOSApp
 output_directory: ./testcoverage-reports
 

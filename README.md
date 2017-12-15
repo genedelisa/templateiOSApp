@@ -23,28 +23,9 @@
 
 
 
-An example using
+This is an evolving template app. Don't use it.
 
 
-## Blog post for this example.
-
-[Blog post](http://www.rockhoppertech.com/blog/)
-
-
-## Bugs
-
-
-[![GitHub issues](https://img.shields.io/github/issues/genedelisa/templateiOSApp.svg)](https://github.com/genedelisa/templateiOSApp/issues)
-
-If you find one, [please add it to issues](https://github.com/genedelisa/templateiOSApp/issues)
-
-
-
-### Buy my kitty Giacomo some cat food
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=F5KE9Z29MH8YQ&bnP-DonationsBF:btn_donate_SM.gif:NonHosted)
-
-<img src="http://www.rockhoppertech.com/blog/wp-content/uploads/2016/07/momocoding-1024.png" alt="Giacomo Kitty" width="400" height="300">
 
 
 ## Licensing

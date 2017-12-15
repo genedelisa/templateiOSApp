@@ -88,6 +88,53 @@ platform :ios do
         clean_build_artifacts
     end
 
+    # ---------------------------
+    # githubupload
+    # ---------------------------
+    desc "Upload to Github"
+        lane :githubupload do
+
+        # ---------------------------
+        # Make sure everything is checked in
+        # ---------------------------
+        ensure_git_status_clean
+
+        # ---------------------------
+        # Increment version numbers.
+        # ---------------------------
+        increment_version_number
+        version = get_version_number()
+        increment_build_number(build_number: version)
+
+        #---------------------------
+        # Commit version bump
+        #---------------------------
+        commit_version_bump(message: 'New Version', force: true)
+
+        #---------------------------
+        # Build
+        #---------------------------
+        gym(clean: true)
+
+        #---------------------------
+        # Tag the submit
+        #---------------------------
+        git_tag = "Version_" + version
+        add_git_tag(tag: git_tag)
+
+        #---------------------------
+        # Push to GitHub
+        #---------------------------
+        push_to_git_remote(remote: 'origin', local_branch: 'master', remote_branch: 'master', force: false)
+#        push_to_git_remote(remote: 'origin', local_branch: 'release', remote_branch: 'release', force: false)
+
+        #---------------------------
+        # Clean up our files
+        #---------------------------
+        clean_build_artifacts
+    end
+
+
 
     # ---------------------------
     # testfilight beta
@@ -107,6 +154,19 @@ platform :ios do
             # pilot will Upload a new binary to iTunes Connect for TestFlight beta testing
             # pilot
         end
+
+
+    # ---------------------------
+    # testcoverage
+    # ---------------------------
+    desc "Run slather"
+        lane :testcoverage do
+        slather(
+            html: true,
+            show: true
+        )
+        end
+
 
     # ---------------------------
     # Release

@@ -6,3 +6,6 @@ gem "fastlane"
 
 gem 'slather'
 
+gem 'xcpretty'
+
+

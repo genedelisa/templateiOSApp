@@ -35,6 +35,16 @@ xcode-select --install
 fastlane ios test
 ```
 Runs all the tests
+### ios runtestflight
+```
+fastlane ios runtestflight
+```
+Testflight
+### ios githubupload
+```
+fastlane ios githubupload
+```
+Upload to Github
 ### ios beta
 ```
 fastlane ios beta
@@ -42,8 +52,11 @@ fastlane ios beta
 Submit a new Beta Build to Apple TestFlight
 
 This will also make sure the profile is up to date
-
-uploading is temporarily disabled
+### ios testcoverage
+```
+fastlane ios testcoverage
+```
+Run slather
 ### ios release
 ```
 fastlane ios release
@@ -54,11 +67,11 @@ Deploy a new version to the App Store
 fastlane ios screens
 ```
 Creates new screenshots and uploads them to iTunes Connect
-### ios snappy
+### ios runlint
 ```
-fastlane ios snappy
+fastlane ios runlint
 ```
-Creates new screenshots 
+Run Swiftlint
 
 ----
 
