@@ -3,6 +3,7 @@
 fastlane/report.xml
 testcoverage-reports/
 xcshareddata/
+Gemfile.lock
 
 ### Xcode ###
 build/
