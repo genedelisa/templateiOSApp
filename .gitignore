@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io
 
 fastlane/report.xml
+fastlane/test_output/
 testcoverage-reports/
 xcshareddata/
 Gemfile.lock
