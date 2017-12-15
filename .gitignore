@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io
 
 fastlane/report.xml
+testcoverage-reports/
 
 ### Xcode ###
 build/
