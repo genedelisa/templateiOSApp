@@ -119,14 +119,14 @@ platform :ios do
         #---------------------------
         # Tag the submit
         #---------------------------
-        git_tag = "Version_" + version
+#        git_tag = "Version_" + version
+        git_tag = version
         add_git_tag(tag: git_tag)
 
         #---------------------------
         # Push to GitHub
         #---------------------------
         push_to_git_remote(remote: 'origin', local_branch: 'master', remote_branch: 'master', force: false)
-#        push_to_git_remote(remote: 'origin', local_branch: 'release', remote_branch: 'release', force: false)
 
         #---------------------------
         # Clean up our files
