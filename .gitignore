@@ -2,6 +2,7 @@
 
 fastlane/report.xml
 testcoverage-reports/
+xcshareddata/
 
 ### Xcode ###
 build/
