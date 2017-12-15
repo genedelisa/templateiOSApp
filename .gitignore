@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io
 
+fastlane/report.xml
+
 ### Xcode ###
 build/
 *.pbxuser
