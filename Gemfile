@@ -6,6 +6,8 @@ gem "fastlane"
 
 gem 'slather'
 
+gem 'coveralls', require: false
+
 gem 'xcpretty'
 
 
