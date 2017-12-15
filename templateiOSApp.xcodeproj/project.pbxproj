@@ -15,8 +15,6 @@
 		B01169841FE3DE5E002D97C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01169821FE3DE5E002D97C4 /* LaunchScreen.storyboard */; };
 		B011698F1FE3DE5E002D97C4 /* templateiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B011698E1FE3DE5E002D97C4 /* templateiOSAppTests.swift */; };
 		B011699A1FE3DE5E002D97C4 /* templateiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01169991FE3DE5E002D97C4 /* templateiOSAppUITests.swift */; };
-		B0530E121FE3F19D00604645 /* .travis.txtcopy in Resources */ = {isa = PBXBuildFile; fileRef = B0530E111FE3F19D00604645 /* .travis.txtcopy */; };
-		B0530E141FE3F65000604645 /* .travis.txt again in Resources */ = {isa = PBXBuildFile; fileRef = B0530E131FE3F65000604645 /* .travis.txt again */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +62,6 @@
 		B01169951FE3DE5E002D97C4 /* templateiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = templateiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01169991FE3DE5E002D97C4 /* templateiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = templateiOSAppUITests.swift; sourceTree = "<group>"; };
 		B011699B1FE3DE5E002D97C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0530E111FE3F19D00604645 /* .travis.txtcopy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.txtcopy; sourceTree = SOURCE_ROOT; };
-		B0530E131FE3F65000604645 /* .travis.txt again */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".travis.txt again"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +134,6 @@
 				B011696B1FE3DE5E002D97C4 /* CHANGELOG.md */,
 				B011696C1FE3DE5E002D97C4 /* .gitignore */,
 				B011696D1FE3DE5E002D97C4 /* .travis.yml */,
-				B0530E131FE3F65000604645 /* .travis.txt again */,
-				B0530E111FE3F19D00604645 /* .travis.txtcopy */,
 				B011696E1FE3DE5E002D97C4 /* .slather.yml */,
 				B011696F1FE3DE5E002D97C4 /* .swiftlint.yml */,
 				B01169701FE3DE5E002D97C4 /* .swift-version */,
@@ -302,8 +296,6 @@
 				B01169841FE3DE5E002D97C4 /* LaunchScreen.storyboard in Resources */,
 				B01169811FE3DE5E002D97C4 /* Assets.xcassets in Resources */,
 				B01169791FE3DE5E002D97C4 /* Main.storyboard in Resources */,
-				B0530E121FE3F19D00604645 /* .travis.txtcopy in Resources */,
-				B0530E141FE3F65000604645 /* .travis.txt again in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
