@@ -64,7 +64,7 @@ platform :ios do
         #---------------------------
         # Build
         #---------------------------
-        gym(clean: true, output_directory: "/tmp", scheme: "App-Release", codesigning_identity: "iOS Distribution: Gene De Lisa")
+        gym(clean: true, output_directory: "/tmp", scheme: "templateiOSApp", codesigning_identity: "iOS Distribution: Gene De Lisa")
 
         #---------------------------
         # Upload to TestFlight
@@ -74,7 +74,7 @@ platform :ios do
         #---------------------------
         # Tag the submit
         #---------------------------
-        git_tag = "Version_" + version
+        git_tag = version
         add_git_tag(tag: git_tag)
 
         #---------------------------
@@ -119,7 +119,6 @@ platform :ios do
         #---------------------------
         # Tag the submit
         #---------------------------
-#        git_tag = "Version_" + version
         git_tag = version
         add_git_tag(tag: git_tag)
 
@@ -129,7 +128,7 @@ platform :ios do
         push_to_git_remote(remote: 'origin', local_branch: 'master', remote_branch: 'master', force: false)
 
         #---------------------------
-        # Clean up our files
+        # Clean up
         #---------------------------
         clean_build_artifacts
     end
@@ -175,7 +174,7 @@ platform :ios do
         lane :release do
             # match(type: "appstore")
             # snapshot
-            gym # Build your app - more options available
+            gym 
             deliver(force: true)
             # frameit
     end
