@@ -8,6 +8,8 @@
 [![GitHub version](https://badge.fury.io/gh/genedelisa%2FtemplateiOSApp)](https://github.com/genedelisa/templateiOSApp)
 [![GitHub stars](https://img.shields.io/github/stars/genedelisa/templateiOSApp.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/genedelisa/templateiOSApp/stargazers/)
 
+[![Coverage Status](https://coveralls.io/repos/github/genedelisa/templateiOSApp/badge.svg?branch=master)](https://coveralls.io/github/genedelisa/templateiOSApp?branch=master)
+
 [![Swift 2](https://img.shields.io/badge/swift2-compatible-4BC51D.svg?style=flat")](https://developer.apple.com/swift)
 
 [![Swift 3](https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat")](https://developer.apple.com/swift)

@@ -7,8 +7,8 @@ xcode_project:
 before_install:
     - gem install bundler
 install:
-    bundle install
+    bundle install --without=documentation
 script:
-    bundle exec fastlane test
+    bundle exec fastlane ios test
 after_success:
-    - cd $TRAVIS_BUILD_DIR && slather
+    - slather

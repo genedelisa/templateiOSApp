@@ -15,9 +15,12 @@ fastlane_version "2.68.2"
 
 default_platform :ios
 
+
 platform :ios do
 
-    before_all do
+    before_all do |lane, options|
+        clear_derived_data
+        set_environment_variables options
         ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
         ENV["SCAN_SLACK_CHANNEL"] = '#build'
         # cocoapods
@@ -29,7 +32,14 @@ platform :ios do
     # ---------------------------
     desc "Runs all the tests"
         lane :test do
-            scan
+            test_args = {
+                scheme: templateiOSApp,
+                clean: true,
+                code_coverage: true,
+                output_types: "html, junit",
+                output_directory: "reports"
+            }
+            scan(test_args)
         end
 
 
