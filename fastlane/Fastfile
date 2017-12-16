@@ -51,6 +51,7 @@ platform :ios do
                 code_coverage: true # no environment variable for this
             }
             scan(test_args)
+            slather
         end
 
 
