@@ -20,9 +20,8 @@ platform :ios do
 
     before_all do |lane, options|
         clear_derived_data
-        set_environment_variables options
-        ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
-        ENV["SCAN_SLACK_CHANNEL"] = '#build'
+#        ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+#        ENV["SCAN_SLACK_CHANNEL"] = '#build'
         # cocoapods
     end
 
@@ -33,11 +32,7 @@ platform :ios do
     desc "Runs all the tests"
         lane :test do
             test_args = {
-                scheme: templateiOSApp,
-                clean: true,
-                code_coverage: true,
-                output_types: "html, junit",
-                output_directory: "reports"
+                code_coverage: true # no environment variable for this
             }
             scan(test_args)
         end
@@ -157,7 +152,7 @@ platform :ios do
             # match(type: "appstore") # more information: https://codesigning.guide
 
             # build your iOS app
-            gym(scheme: "templateiOSApp")
+            gym(scheme: ENV["SCHEME"])
             # gym(scheme: "Docs")
 
             # pilot will Upload a new binary to iTunes Connect for TestFlight beta testing
