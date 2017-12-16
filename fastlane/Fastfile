@@ -19,7 +19,7 @@ default_platform :ios
 platform :ios do
 
     before_all do |lane, options|
-        clear_derived_data
+#        clear_derived_data
 #        ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
 #        ENV["SCAN_SLACK_CHANNEL"] = '#build'
         # cocoapods
