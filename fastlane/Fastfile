@@ -26,6 +26,22 @@ platform :ios do
     end
 
 
+
+    # ---------------------------
+    # Provision
+    # ---------------------------
+    desc "Creating a code signing certificate and provisioning profile"
+        lane :provision do
+            # alias for create_app_online
+            version = get_version_number()
+            produce(
+                app_version: version
+            )
+            cert
+            sigh(force: true)
+        end
+
+
     # ---------------------------
     # Tests
     # ---------------------------
@@ -165,10 +181,11 @@ platform :ios do
     # ---------------------------
     desc "Run slather"
         lane :testcoverage do
-        slather(
-            html: true,
-            show: true
-        )
+        slather
+#        slather(
+#            html: true,
+#            show: true
+#        )
         end
 
 
