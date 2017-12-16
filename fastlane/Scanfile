@@ -4,7 +4,7 @@ code_coverage true
 device "iPhone 8"
 skip_slack true
 slack_only_on_failure true
-output_types html,junit
-output_directory reports
+output_types "html,junit"
+output_directory "reports"
 open_report true
 slack_message "Scanned "

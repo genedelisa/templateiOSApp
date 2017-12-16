@@ -30,6 +30,11 @@ xcode-select --install
 
 # Available Actions
 ## iOS
+### ios provision
+```
+fastlane ios provision
+```
+Creating a code signing certificate and provisioning profile
 ### ios test
 ```
 fastlane ios test
