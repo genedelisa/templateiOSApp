@@ -51,14 +51,13 @@ platform :ios do
             test_args = {
                 # no environment variable for this
                 code_coverage: true,
-                scheme: "templateiOSApp",
                 build_for_testing: true
             }
             scan(test_args)
 
             UI.message "🕗  Running slather"
             slather(
-                binary_basename:  "templateiOSApp",
+#                binary_basename:  "templateiOSApp",
                 output_directory: "fastlane/test_output/"
             )
             UI.success "✅  Tests and slather successful"
@@ -72,7 +71,6 @@ platform :ios do
         test_args = {
             # no environment variable for this
             code_coverage: true,
-            scheme: "templateiOSApp",
             build_for_testing: true
         }
         UI.message "🕗  Running tests on scheme #{ENV['FL_SLATHER_SCHEME']}"
