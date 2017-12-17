@@ -51,7 +51,8 @@ platform :ios do
             test_args = {
                 # no environment variable for this
                 code_coverage: true,
-                scheme: 'templateiOSApp'
+                scheme: "templateiOSApp",
+                build_for_testing: true
             }
             scan(test_args)
 
@@ -71,7 +72,8 @@ platform :ios do
         test_args = {
             # no environment variable for this
             code_coverage: true,
-            scheme: 'templateiOSApp'
+            scheme: "templateiOSApp",
+            build_for_testing: true
         }
         UI.message "🕗  Running tests on scheme #{ENV['FL_SLATHER_SCHEME']}"
         scan(test_args)
