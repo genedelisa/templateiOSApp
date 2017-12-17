@@ -40,6 +40,11 @@ Creating a code signing certificate and provisioning profile
 fastlane ios test
 ```
 Runs all the tests
+### ios localtest
+```
+fastlane ios localtest
+```
+Runs all the tests
 ### ios runtestflight
 ```
 fastlane ios runtestflight

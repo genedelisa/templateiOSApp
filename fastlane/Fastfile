@@ -47,12 +47,41 @@ platform :ios do
     # ---------------------------
     desc "Runs all the tests"
         lane :test do
+            UI.message "🕗  Running tests on scheme #{ENV['FL_SLATHER_SCHEME']}"
             test_args = {
-                code_coverage: true # no environment variable for this
+                # no environment variable for this
+                code_coverage: true
             }
             scan(test_args)
-            slather
+
+            UI.message "🕗  Running slather"
+            slather(
+                output_directory: "fastlane/test_output/"
+            )
+            UI.success "✅  Tests and slather successful"
         end
+
+    # ---------------------------
+    # Tests local
+    # ---------------------------
+    desc "Runs all the tests"
+    lane :localtest do
+        test_args = {
+            # no environment variable for this
+            code_coverage: true
+        }
+        UI.message "🕗  Running tests on scheme #{ENV['FL_SLATHER_SCHEME']}"
+        scan(test_args)
+
+        slather(
+            travis: false,
+            coveralls: false,
+            html: true,
+            show: true,
+            output_directory: "fastlane/slather/"
+        )
+        UI.success "✅  Tests and slather successful"
+    end
 
 
     # ---------------------------
