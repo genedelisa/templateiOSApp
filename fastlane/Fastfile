@@ -56,7 +56,7 @@ platform :ios do
 
             UI.message "🕗  Running slather"
             slather(
-                binary-basename:  "templateiOSApp",
+                binary_basename:  "templateiOSApp",
                 output_directory: "fastlane/test_output/"
             )
             UI.success "✅  Tests and slather successful"
