@@ -1,4 +1,4 @@
-scheme "templateiOSApp"
+scheme templateiOSApp
 clean true
 code_coverage true
 device "iPhone 8"
