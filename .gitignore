@@ -2,6 +2,7 @@
 
 fastlane/report.xml
 fastlane/test_output/
+fastlane/slather/
 testcoverage-reports/
 xcshareddata/
 Gemfile.lock
