@@ -50,8 +50,7 @@ platform :ios do
             UI.message "🕗  Running tests on scheme #{ENV['FL_SLATHER_SCHEME']}"
             test_args = {
                 # no environment variable for this
-                code_coverage: true,
-                build_for_testing: true
+                code_coverage: true
             }
             scan(test_args)
 
@@ -70,8 +69,7 @@ platform :ios do
     lane :localtest do
         test_args = {
             # no environment variable for this
-            code_coverage: true,
-            build_for_testing: true
+            code_coverage: true
         }
         UI.message "🕗  Running tests on scheme #{ENV['FL_SLATHER_SCHEME']}"
         scan(test_args)
