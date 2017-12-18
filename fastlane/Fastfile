@@ -22,7 +22,7 @@ platform :ios do
 #        clear_derived_data
 #        ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
 #        ENV["SCAN_SLACK_CHANNEL"] = '#build'
-        # cocoapods
+#        cocoapods
     end
 
 
@@ -211,7 +211,7 @@ platform :ios do
     # testcoverage
     # ---------------------------
     desc "Run slather"
-        lane :testcoverage do
+        lane :testcoverage do |lane, options|
         slather
 #        slather(
 #            html: true,
@@ -236,7 +236,7 @@ platform :ios do
     # Screen shots with frames
     # ---------------------------
     desc "Creates new screenshots and uploads them to iTunes Connect"
-        lane :screens do
+        lane :screens do |lane, options|
             #cocoapods
             #match(app_identifier: "com.rockhoppertech.templateiOSApp", type: "development")
             snapshot
